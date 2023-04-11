@@ -18,7 +18,8 @@ export const Join = () => {
             <input placeholder='room' className='joinInput mt-20' type='text' onChange={(event)=>setRoom(event.target.value)}/>
             </div>
             {/* PREVENT DEFAULT() PREVENT BUTTON CLICK */}
-            <Link onClick={event=>(!name||!room) ? event.preventDefault():null} to={`/Chat? name=${name}&room=${room}`}>
+            {/* to kemilew ketlo chat start with small letter alebeleziya betam aschegrognal even route gar kalew gar temesasay bihon enquan */}
+            <Link onClick={event=>(!name||!room) ? event.preventDefault():null} to={`/chat? name=${name}&room=${room}`}>
             <button className='button mt-20' type='submmit'>signin</button>
             </Link>
         </div>
