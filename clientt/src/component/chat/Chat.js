@@ -6,7 +6,7 @@ import io from 'socket.io-client'
 export const Chat = ({qs}) => {
   //run when thr function renders
   useEffect(()=>{
-    const {name,room}=queryString.parse(qs)
+    const {name,room}=queryString.parse()
     console.log(name,room)
   })
   return (
